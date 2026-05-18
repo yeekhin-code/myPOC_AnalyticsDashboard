@@ -149,6 +149,20 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
         // Use string field for label, or numeric field if no string available
         const bubbleLabelKey = stringKeys[0] || numericKeys[3] || keys[3] || keys[0];
 
+        // Calculate Y-axis domain with padding (20% above max value)
+        const yValues = data.map((item) => Number(item[bubbleYKey]) || 0);
+        const maxY = Math.max(...yValues);
+        const minY = Math.min(...yValues);
+        const yPadding = (maxY - minY) * 0.2 || maxY * 0.2 || 10;
+        const yDomain = [Math.max(0, minY - yPadding), maxY + yPadding];
+
+        // Calculate X-axis domain with padding
+        const xValues = data.map((item) => Number(item[bubbleXKey]) || 0);
+        const maxX = Math.max(...xValues);
+        const minX = Math.min(...xValues);
+        const xPadding = (maxX - minX) * 0.2 || maxX * 0.2 || 10;
+        const xDomain = [Math.max(0, minX - xPadding), maxX + xPadding];
+
         // Custom label content renderer
         const customLabel = (props: any) => {
           const { x, y, value, index } = props;
@@ -180,12 +194,14 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
                 dataKey={bubbleXKey}
                 name={bubbleXKey}
                 stroke="#6b7280"
+                domain={xDomain}
               />
               <YAxis
                 type="number"
                 dataKey={bubbleYKey}
                 name={bubbleYKey}
                 stroke="#6b7280"
+                domain={yDomain}
               />
               <ZAxis
                 type="number"
