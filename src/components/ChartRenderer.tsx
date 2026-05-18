@@ -141,10 +141,32 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
         );
 
       case 'bubble':
-        // Use first 3 numeric fields as x, y, z (bubble size)
+        // Use first 3 numeric fields as x, y, z (bubble size) and 4th key for label
         const bubbleXKey = numericKeys[0] || keys[0];
         const bubbleYKey = numericKeys[1] || keys[1];
         const bubbleZKey = numericKeys[2] || keys[2];
+        // Use string field for label, or numeric field if no string available
+        const bubbleLabelKey = stringKeys[0] || numericKeys[3] || keys[3] || keys[0];
+
+        // Custom label component for bubbles
+        const renderBubbleLabel = (props: any) => {
+          const { cx, cy, payload } = props;
+          if (!payload || !bubbleLabelKey) return null;
+
+          return (
+            <text
+              x={cx}
+              y={cy}
+              fill="#1f2937"
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fontSize="11"
+              fontWeight="600"
+            >
+              {String(payload[bubbleLabelKey])}
+            </text>
+          );
+        };
 
         return (
           <ResponsiveContainer width="100%" height={350}>
@@ -177,6 +199,7 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
                 name={endpointName}
                 data={data}
                 fill="#3B82F6"
+                label={renderBubbleLabel}
               />
             </ScatterChart>
           </ResponsiveContainer>
