@@ -1,0 +1,68 @@
+2026-05-18T08:20:13.203Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-05-18T08:20:13.204Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-05-18T08:20:13.204Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-05-18T08:20:13.214Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-05-18T08:20:13.215Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-05-18T08:20:13.215Z [DEBUG] Total LSP servers loaded: 0
+2026-05-18T08:20:13.215Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-05-18T08:20:13.215Z [DEBUG] LSP manager initialized with 0 servers
+2026-05-18T08:20:13.215Z [DEBUG] LSP server manager initialized successfully
+2026-05-18T08:20:13.215Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-05-18T08:20:13.216Z [DEBUG] [STARTUP] MCP configs loaded in 2ms
+2026-05-18T08:20:13.225Z [DEBUG] [STARTUP] Running setup()...
+2026-05-18T08:20:13.235Z [DEBUG] Stats cache does not exist, returning empty cache
+2026-05-18T08:20:13.235Z [DEBUG] Stats cache empty, processing all historical data in background
+2026-05-18T08:20:13.538Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/node/.claude/skills, project=[/home/node/txai-projects/project/.claude/skills]
+2026-05-18T08:20:13.808Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-05-18T08:20:14.030Z [DEBUG] Writing to temp file: /home/node/.claude/todos/d8eef31b-d7ce-4ddd-8b67-e8576e179121-agent-d8eef31b-d7ce-4ddd-8b67-e8576e179121.json.tmp.5538.1779092414029
+2026-05-18T08:20:14.034Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-05-18T08:20:14.034Z [DEBUG] Renaming /home/node/.claude/todos/d8eef31b-d7ce-4ddd-8b67-e8576e179121-agent-d8eef31b-d7ce-4ddd-8b67-e8576e179121.json.tmp.5538.1779092414029 to /home/node/.claude/todos/d8eef31b-d7ce-4ddd-8b67-e8576e179121-agent-d8eef31b-d7ce-4ddd-8b67-e8576e179121.json
+2026-05-18T08:20:14.035Z [DEBUG] File /home/node/.claude/todos/d8eef31b-d7ce-4ddd-8b67-e8576e179121-agent-d8eef31b-d7ce-4ddd-8b67-e8576e179121.json written atomically
+2026-05-18T08:20:14.038Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-05-18T08:20:14.038Z [DEBUG] Total plugin skills loaded: 0
+2026-05-18T08:20:14.038Z [DEBUG] Total plugin commands loaded: 0
+2026-05-18T08:20:14.038Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-05-18T08:20:14.182Z [DEBUG] [STARTUP] setup() completed in 957ms
+2026-05-18T08:20:14.182Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-05-18T08:20:14.185Z [DEBUG] Total plugin agents loaded: 0
+2026-05-18T08:20:14.186Z [DEBUG] Skipping duplicate skill 'authenticating-foundry-apps' from projectSettings (same inode already loaded from userSettings)
+2026-05-18T08:20:14.187Z [DEBUG] Skipping duplicate skill 'configuring-vite-environments' from projectSettings (same inode already loaded from userSettings)
+2026-05-18T08:20:14.187Z [DEBUG] Skipping duplicate skill 'database-integration' from projectSettings (same inode already loaded from userSettings)
+2026-05-18T08:20:14.187Z [DEBUG] Skipping duplicate skill 'documenting-projects' from projectSettings (same inode already loaded from userSettings)
+2026-05-18T08:20:14.187Z [DEBUG] Skipping duplicate skill 'integrating-foundry-services' from projectSettings (same inode already loaded from userSettings)
+2026-05-18T08:20:14.187Z [DEBUG] Skipping duplicate skill 'managing-services' from projectSettings (same inode already loaded from userSettings)
+2026-05-18T08:20:14.187Z [DEBUG] Deduplicated 6 skills (same inode)
+2026-05-18T08:20:14.187Z [DEBUG] Loaded 6 unique skills (managed: 0, user: 6, project: 6, legacy commands: 0)
+2026-05-18T08:20:14.187Z [DEBUG] getSkills returning: 6 skill dir commands, 0 plugin skills
+2026-05-18T08:20:14.188Z [DEBUG] [STARTUP] Commands and agents loaded in 6ms
+2026-05-18T08:20:14.258Z [DEBUG] MCP server "binary-file-processor": Starting connection with timeout of 30000ms
+2026-05-18T08:20:14.338Z [DEBUG] MCP server "voltmxMcpServer": Starting connection with timeout of 30000ms
+2026-05-18T08:20:14.983Z [DEBUG] MCP server "voltmxMcpServer": Successfully connected to undefined server in 702ms
+2026-05-18T08:20:14.984Z [DEBUG] MCP server "voltmxMcpServer": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":true,"serverVersion":{"name":"voltmx-mcp-server","version":"1.0.0"}}
+2026-05-18T08:20:14.985Z [ERROR] MCP server "voltmxMcpServer" Server stderr: Configuration loaded successfully
+VoltMX MCP Server running on stdio
+2026-05-18T08:20:15.012Z [DEBUG] Git remote URL: null
+2026-05-18T08:20:15.012Z [DEBUG] No git remote URL found
+2026-05-18T08:20:15.012Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-05-18T08:20:15.489Z [DEBUG] Creating shell snapshot for zsh (/usr/bin/zsh)
+2026-05-18T08:20:15.490Z [DEBUG] Looking for shell config file: /home/node/.zshrc
+2026-05-18T08:20:15.490Z [DEBUG] Shell config file not found: /home/node/.zshrc, creating snapshot with Claude Code defaults only
+2026-05-18T08:20:15.490Z [DEBUG] Snapshots directory: /home/node/.claude/shell-snapshots
+2026-05-18T08:20:15.493Z [DEBUG] Creating snapshot at: /home/node/.claude/shell-snapshots/snapshot-zsh-1779092415490-fw88kj.sh
+2026-05-18T08:20:15.493Z [DEBUG] Shell binary exists: true
+2026-05-18T08:20:15.493Z [DEBUG] Execution timeout: 10000ms
+2026-05-18T08:20:15.563Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/usr/src/app/node_modules/@anthropic-ai/claude-agent-sdk/vendor/ripgrep/x64-linux/rg)
+2026-05-18T08:20:15.575Z [DEBUG] Watching for changes in skill directories: /home/node/.claude/skills, /home/node/txai-projects/project/.claude/skills...
+2026-05-18T08:20:15.588Z [DEBUG] MCP server "binary-file-processor": Successfully connected to undefined server in 1392ms
+2026-05-18T08:20:15.588Z [DEBUG] MCP server "binary-file-processor": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"binary-file-processor","version":"1.0.0"}}
+2026-05-18T08:20:15.594Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-05-18T08:20:15.594Z [DEBUG] Found 0 hook matchers in settings
+2026-05-18T08:20:15.594Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-05-18T08:20:15.594Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-05-18T08:20:15.594Z [DEBUG] Found 0 hook matchers in settings
+2026-05-18T08:20:15.594Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-05-18T08:20:15.594Z [DEBUG] Getting matching hook commands for SubagentStart with query: Bash
+2026-05-18T08:20:15.594Z [DEBUG] Found 0 hook matchers in settings
+2026-05-18T08:20:15.594Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-05-18T08:20:15.989Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-05-18T08:20:16.163Z [DEBUG] Shell snapshot created successfully (537 bytes)

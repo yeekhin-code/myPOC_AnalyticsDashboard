@@ -28,7 +28,7 @@ export interface ChartData {
   chartType: ChartType;
 }
 
-export type ChartType = 'bar' | 'line' | 'pie' | 'area' | 'table';
+export type ChartType = 'bar' | 'line' | 'pie' | 'area' | 'bubble' | 'table';
 
 export interface ChartConfig {
   type: ChartType;

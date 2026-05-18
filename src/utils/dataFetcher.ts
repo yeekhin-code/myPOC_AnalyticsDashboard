@@ -42,6 +42,11 @@ export const detectChartType = (data: DataPoint[]): ChartType => {
     return 'table';
   }
 
+  // If has 3 or more numeric fields (x, y, z/size), use bubble chart
+  if (numericFields.length >= 3) {
+    return 'bubble';
+  }
+
   // If only 1-3 data points and has numeric values, use pie chart
   if (data.length <= 3 && numericFields.length > 0) {
     return 'pie';

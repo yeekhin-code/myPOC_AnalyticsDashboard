@@ -141,7 +141,7 @@ function App() {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+            <div className={`grid gap-6 ${chartData.length === 1 ? 'grid-cols-1' : 'grid-cols-1 xl:grid-cols-2'}`}>
               {chartData.map((data) => (
                 <ChartRenderer key={data.endpointId} chartData={data} />
               ))}

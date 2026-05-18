@@ -8,6 +8,9 @@ import {
   Pie,
   AreaChart,
   Area,
+  ScatterChart,
+  Scatter,
+  ZAxis,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -134,6 +137,48 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
               />
               <Legend />
             </PieChart>
+          </ResponsiveContainer>
+        );
+
+      case 'bubble':
+        // Use first 3 numeric fields as x, y, z (bubble size)
+        const bubbleXKey = numericKeys[0] || keys[0];
+        const bubbleYKey = numericKeys[1] || keys[1];
+        const bubbleZKey = numericKeys[2] || keys[2];
+
+        return (
+          <ResponsiveContainer width="100%" height={350}>
+            <ScatterChart>
+              <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+              <XAxis
+                type="number"
+                dataKey={bubbleXKey}
+                name={bubbleXKey}
+                stroke="#6b7280"
+              />
+              <YAxis
+                type="number"
+                dataKey={bubbleYKey}
+                name={bubbleYKey}
+                stroke="#6b7280"
+              />
+              <ZAxis
+                type="number"
+                dataKey={bubbleZKey}
+                range={[60, 400]}
+                name={bubbleZKey}
+              />
+              <Tooltip
+                cursor={{ strokeDasharray: '3 3' }}
+                contentStyle={{ backgroundColor: '#fff', border: '1px solid #e5e7eb', borderRadius: '6px' }}
+              />
+              <Legend />
+              <Scatter
+                name={endpointName}
+                data={data}
+                fill="#3B82F6"
+              />
+            </ScatterChart>
           </ResponsiveContainer>
         );
 
