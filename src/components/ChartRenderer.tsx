@@ -18,6 +18,7 @@ import {
   Legend,
   ResponsiveContainer,
   Cell,
+  LabelList,
 } from 'recharts';
 import { ChartData, DataPoint } from '../types';
 
@@ -148,22 +149,24 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
         // Use string field for label, or numeric field if no string available
         const bubbleLabelKey = stringKeys[0] || numericKeys[3] || keys[3] || keys[0];
 
-        // Custom label component for bubbles
-        const renderBubbleLabel = (props: any) => {
-          const { cx, cy, payload } = props;
-          if (!payload || !bubbleLabelKey) return null;
+        // Custom label content renderer
+        const customLabel = (props: any) => {
+          const { x, y, value, index } = props;
+          const labelValue = data[index]?.[bubbleLabelKey];
+
+          if (!labelValue) return null;
 
           return (
             <text
-              x={cx}
-              y={cy}
+              x={x}
+              y={y}
               fill="#1f2937"
               textAnchor="middle"
               dominantBaseline="middle"
               fontSize="11"
               fontWeight="600"
             >
-              {String(payload[bubbleLabelKey])}
+              {String(labelValue)}
             </text>
           );
         };
@@ -199,8 +202,13 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
                 name={endpointName}
                 data={data}
                 fill="#3B82F6"
-                label={renderBubbleLabel}
-              />
+              >
+                <LabelList
+                  dataKey={bubbleLabelKey}
+                  position="center"
+                  content={customLabel}
+                />
+              </Scatter>
             </ScatterChart>
           </ResponsiveContainer>
         );
