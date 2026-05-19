@@ -2573,3 +2573,99 @@ VoltMX MCP Server running on stdio
 2026-05-19T02:49:40.574Z [DEBUG] LSP server manager shut down successfully
 2026-05-19T02:49:40.593Z [DEBUG] MCP server "binary-file-processor": UNKNOWN connection closed after 115s (cleanly)
 2026-05-19T02:49:40.593Z [DEBUG] MCP server "binary-file-processor": Cleared connection cache for reconnection
+2026-05-19T03:11:33.642Z [DEBUG] MCP server "binary-file-processor": Successfully connected to undefined server in 1234ms
+2026-05-19T03:11:33.642Z [DEBUG] MCP server "binary-file-processor": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"binary-file-processor","version":"1.0.0"}}
+2026-05-19T03:11:33.663Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-05-19T03:11:33.799Z [DEBUG] Getting matching hook commands for SessionStart with query: resume
+2026-05-19T03:11:33.799Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:33.799Z [DEBUG] Matched 0 unique hooks for query "resume" (0 before deduplication)
+2026-05-19T03:11:33.807Z [DEBUG] Total plugin output styles loaded: 0
+2026-05-19T03:11:33.844Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T03:11:33.845Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T03:11:33.845Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T03:11:33.845Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T03:11:33.893Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-05-19T03:11:33.893Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:33.893Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T03:11:33.897Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:33.898Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:33.898Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:33.899Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T03:11:33.912Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:34.124Z [DEBUG] Stream started - received first chunk
+2026-05-19T03:11:34.706Z [DEBUG] Stream started - received first chunk
+2026-05-19T03:11:35.101Z [DEBUG] Stream started - received first chunk
+2026-05-19T03:11:35.676Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-05-19T03:11:35.676Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:35.676Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T03:11:35.915Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-05-19T03:11:35.916Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-05-19T03:11:35.916Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:35.916Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-05-19T03:11:35.941Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:35.941Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:35.942Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:35.942Z [DEBUG] Tool search disabled for model 'us.anthropic.claude-3-5-haiku-20241022-v1:0': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-05-19T03:11:35.945Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:37.175Z [DEBUG] Stream started - received first chunk
+2026-05-19T03:11:37.191Z [DEBUG] Stream started - received first chunk
+2026-05-19T03:11:37.994Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-05-19T03:11:37.994Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:37.994Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T03:11:38.419Z [DEBUG] executePreToolHooks called for tool: Read
+2026-05-19T03:11:38.419Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-05-19T03:11:38.419Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:38.419Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T03:11:38.426Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-05-19T03:11:38.426Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:38.426Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T03:11:38.475Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T03:11:38.475Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T03:11:38.475Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T03:11:38.475Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T03:11:38.476Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:38.477Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:38.477Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:38.478Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T03:11:38.487Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:38.511Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-05-19T03:11:38.511Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-05-19T03:11:38.511Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:38.511Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-05-19T03:11:38.535Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:38.536Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:38.536Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:38.536Z [DEBUG] Tool search disabled for model 'us.anthropic.claude-3-5-haiku-20241022-v1:0': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-05-19T03:11:38.539Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:39.418Z [DEBUG] Stream started - received first chunk
+2026-05-19T03:11:41.117Z [DEBUG] Stream started - received first chunk
+2026-05-19T03:11:41.845Z [DEBUG] executePreToolHooks called for tool: Read
+2026-05-19T03:11:41.845Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-05-19T03:11:41.845Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:41.845Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T03:11:41.848Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-05-19T03:11:41.848Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:41.848Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T03:11:41.883Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T03:11:41.883Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T03:11:41.883Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T03:11:41.883Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T03:11:41.884Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:41.885Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:41.886Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:41.886Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T03:11:41.896Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T03:11:44.091Z [DEBUG] Stream started - received first chunk
+2026-05-19T03:11:45.257Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-05-19T03:11:45.257Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:11:45.257Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T03:12:13.922Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-05-19T03:12:13.922Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:12:13.922Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T03:12:14.339Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2026-05-19T03:12:14.339Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T03:12:14.339Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)
+2026-05-19T03:12:14.347Z [DEBUG] Cleaned up session snapshot: /home/node/.claude/shell-snapshots/snapshot-zsh-1779160292915-2fzmm5.sh
+2026-05-19T03:12:14.347Z [DEBUG] LSP server manager shut down successfully
+2026-05-19T03:12:14.366Z [DEBUG] MCP server "binary-file-processor": UNKNOWN connection closed after 40s (cleanly)
+2026-05-19T03:12:14.366Z [DEBUG] MCP server "binary-file-processor": Cleared connection cache for reconnection
