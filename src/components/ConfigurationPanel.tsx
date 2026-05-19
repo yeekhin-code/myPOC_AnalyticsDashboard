@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { DataEndpoint } from '../types';
+import { DataEndpoint, Department } from '../types';
 
 interface ConfigurationPanelProps {
   endpoints: DataEndpoint[];
+  departments: Department[];
   onEndpointsChange: (endpoints: DataEndpoint[]) => void;
 }
 
-const ConfigurationPanel: React.FC<ConfigurationPanelProps> = ({ endpoints, onEndpointsChange }) => {
+const ConfigurationPanel: React.FC<ConfigurationPanelProps> = ({ endpoints, departments, onEndpointsChange }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [newEndpoint, setNewEndpoint] = useState({ name: '', url: '' });
+  const [newEndpoint, setNewEndpoint] = useState({ name: '', url: '', department: 'all' });
 
   const handleAddEndpoint = () => {
     if (newEndpoint.name && newEndpoint.url) {
@@ -17,9 +18,10 @@ const ConfigurationPanel: React.FC<ConfigurationPanelProps> = ({ endpoints, onEn
         name: newEndpoint.name,
         url: newEndpoint.url,
         enabled: true,
+        department: newEndpoint.department,
       };
       onEndpointsChange([...endpoints, endpoint]);
-      setNewEndpoint({ name: '', url: '' });
+      setNewEndpoint({ name: '', url: '', department: 'all' });
     }
   };
 
@@ -31,6 +33,12 @@ const ConfigurationPanel: React.FC<ConfigurationPanelProps> = ({ endpoints, onEn
 
   const handleDeleteEndpoint = (id: string) => {
     onEndpointsChange(endpoints.filter((ep) => ep.id !== id));
+  };
+
+  const handleDepartmentChange = (id: string, department: string) => {
+    onEndpointsChange(
+      endpoints.map((ep) => (ep.id === id ? { ...ep, department } : ep))
+    );
   };
 
   return (
@@ -55,7 +63,7 @@ const ConfigurationPanel: React.FC<ConfigurationPanelProps> = ({ endpoints, onEn
           {/* Add New Endpoint */}
           <div className="mt-4 mb-6 p-4 bg-blue-50 rounded-lg">
             <h3 className="text-sm font-semibold text-gray-700 mb-3">Add New Data Endpoint</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
               <input
                 type="text"
                 placeholder="Endpoint Name"
@@ -70,6 +78,18 @@ const ConfigurationPanel: React.FC<ConfigurationPanelProps> = ({ endpoints, onEn
                 onChange={(e) => setNewEndpoint({ ...newEndpoint, url: e.target.value })}
                 className="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
+              <select
+                value={newEndpoint.department}
+                onChange={(e) => setNewEndpoint({ ...newEndpoint, department: e.target.value })}
+                className="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              >
+                <option value="all">All Departments</option>
+                {departments.map((dept) => (
+                  <option key={dept.id} value={dept.id}>
+                    {dept.name}
+                  </option>
+                ))}
+              </select>
             </div>
             <button
               onClick={handleAddEndpoint}
@@ -89,26 +109,42 @@ const ConfigurationPanel: React.FC<ConfigurationPanelProps> = ({ endpoints, onEn
                 {endpoints.map((endpoint) => (
                   <div
                     key={endpoint.id}
-                    className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                    className="p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                   >
-                    <div className="flex items-center space-x-3 flex-1 min-w-0">
-                      <input
-                        type="checkbox"
-                        checked={endpoint.enabled}
-                        onChange={() => handleToggleEndpoint(endpoint.id)}
-                        className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                      />
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm font-medium text-gray-900 truncate">{endpoint.name}</p>
-                        <p className="text-xs text-gray-500 truncate">{endpoint.url}</p>
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center space-x-3 flex-1 min-w-0">
+                        <input
+                          type="checkbox"
+                          checked={endpoint.enabled}
+                          onChange={() => handleToggleEndpoint(endpoint.id)}
+                          className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                        />
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-medium text-gray-900 truncate">{endpoint.name}</p>
+                          <p className="text-xs text-gray-500 truncate">{endpoint.url}</p>
+                        </div>
                       </div>
+                      <button
+                        onClick={() => handleDeleteEndpoint(endpoint.id)}
+                        className="ml-3 px-3 py-1 text-sm text-red-600 hover:bg-red-50 rounded-md transition-colors"
+                      >
+                        Delete
+                      </button>
                     </div>
-                    <button
-                      onClick={() => handleDeleteEndpoint(endpoint.id)}
-                      className="ml-3 px-3 py-1 text-sm text-red-600 hover:bg-red-50 rounded-md transition-colors"
-                    >
-                      Delete
-                    </button>
+                    <div className="ml-7">
+                      <select
+                        value={endpoint.department}
+                        onChange={(e) => handleDepartmentChange(endpoint.id, e.target.value)}
+                        className="w-full max-w-xs px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      >
+                        <option value="all">All Departments</option>
+                        {departments.map((dept) => (
+                          <option key={dept.id} value={dept.id}>
+                            {dept.name}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
                   </div>
                 ))}
               </div>

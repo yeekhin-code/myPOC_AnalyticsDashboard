@@ -2122,3 +2122,454 @@ VoltMX MCP Server running on stdio
 2026-05-18T09:13:34.252Z [DEBUG] LSP server manager shut down successfully
 2026-05-18T09:13:34.269Z [DEBUG] MCP server "binary-file-processor": UNKNOWN connection closed after 38s (cleanly)
 2026-05-18T09:13:34.270Z [DEBUG] MCP server "binary-file-processor": Cleared connection cache for reconnection
+2026-05-19T02:47:44.370Z [DEBUG] Stats cache saved successfully (lastComputedDate: 2026-05-18)
+2026-05-19T02:47:44.370Z [DEBUG] Stats cache updated with 1 sessions
+2026-05-19T02:47:44.446Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.447Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.447Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.448Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.449Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.449Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.453Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.536.1779158864453
+2026-05-19T02:47:44.453Z [DEBUG] Preserving file permissions: 100600
+2026-05-19T02:47:44.453Z [DEBUG] Temp file written successfully, size: 273 bytes
+2026-05-19T02:47:44.454Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:44.454Z [DEBUG] Renaming /home/node/.claude.json.tmp.536.1779158864453 to /home/node/.claude.json
+2026-05-19T02:47:44.454Z [DEBUG] File /home/node/.claude.json written atomically
+2026-05-19T02:47:44.454Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.457Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.458Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.459Z [DEBUG] Tool search disabled for model 'us.anthropic.claude-3-5-haiku-20241022-v1:0': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-05-19T02:47:44.459Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:47:44.459Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:47:44.538Z [DEBUG] Skills and commands included in Skill tool: authenticating-foundry-apps, configuring-vite-environments, database-integration, documenting-projects, integrating-foundry-services, managing-services
+2026-05-19T02:47:44.547Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.550Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.536.1779158864550
+2026-05-19T02:47:44.550Z [DEBUG] Preserving file permissions: 100600
+2026-05-19T02:47:44.550Z [DEBUG] Temp file written successfully, size: 353 bytes
+2026-05-19T02:47:44.550Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:44.550Z [DEBUG] Renaming /home/node/.claude.json.tmp.536.1779158864550 to /home/node/.claude.json
+2026-05-19T02:47:44.551Z [DEBUG] File /home/node/.claude.json written atomically
+2026-05-19T02:47:44.557Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.557Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.648Z [DEBUG] Tool search disabled for model 'us.anthropic.claude-3-5-haiku-20241022-v1:0': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-05-19T02:47:44.648Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:44.923Z [DEBUG] MCP server "binary-file-processor": Successfully connected to undefined server in 1337ms
+2026-05-19T02:47:44.923Z [DEBUG] MCP server "binary-file-processor": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"binary-file-processor","version":"1.0.0"}}
+2026-05-19T02:47:44.944Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-05-19T02:47:45.016Z [DEBUG] Getting matching hook commands for SessionStart with query: resume
+2026-05-19T02:47:45.016Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:45.016Z [DEBUG] Matched 0 unique hooks for query "resume" (0 before deduplication)
+2026-05-19T02:47:45.026Z [DEBUG] Total plugin output styles loaded: 0
+2026-05-19T02:47:45.073Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:47:45.074Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:47:45.074Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:47:45.074Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:47:45.104Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-05-19T02:47:45.104Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:45.104Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T02:47:45.107Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:45.108Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:45.109Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:45.109Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:47:45.121Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:45.417Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:45.839Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.536.1779158865839
+2026-05-19T02:47:45.839Z [DEBUG] Preserving file permissions: 100600
+2026-05-19T02:47:45.839Z [DEBUG] Temp file written successfully, size: 957 bytes
+2026-05-19T02:47:45.840Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:45.840Z [DEBUG] Renaming /home/node/.claude.json.tmp.536.1779158865839 to /home/node/.claude.json
+2026-05-19T02:47:45.840Z [DEBUG] File /home/node/.claude.json written atomically
+2026-05-19T02:47:46.328Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:46.981Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:47.093Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:47.661Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-05-19T02:47:47.661Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:47.661Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T02:47:48.310Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:48.664Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-05-19T02:47:48.664Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-05-19T02:47:48.664Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:48.664Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-05-19T02:47:48.690Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:48.690Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:48.690Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:48.691Z [DEBUG] Tool search disabled for model 'us.anthropic.claude-3-5-haiku-20241022-v1:0': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-05-19T02:47:48.693Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:49.517Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-05-19T02:47:49.517Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:49.517Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T02:47:51.101Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:51.521Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-05-19T02:47:51.521Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-05-19T02:47:51.521Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:51.521Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-05-19T02:47:51.522Z [DEBUG] Writing to temp file: /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json.tmp.536.1779158871522
+2026-05-19T02:47:51.522Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:47:51.526Z [DEBUG] Temp file written successfully, size: 726 bytes
+2026-05-19T02:47:51.527Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:51.527Z [DEBUG] Renaming /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json.tmp.536.1779158871522 to /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json
+2026-05-19T02:47:51.530Z [DEBUG] File /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json written atomically
+2026-05-19T02:47:51.531Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-05-19T02:47:51.531Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:51.531Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-05-19T02:47:51.561Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:47:51.561Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:47:51.561Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:47:51.561Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:47:51.562Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:51.563Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:51.563Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:51.564Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:47:51.573Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:52.487Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-05-19T02:47:52.487Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-05-19T02:47:52.487Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:52.487Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-05-19T02:47:52.511Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:52.512Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:52.512Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:52.513Z [DEBUG] Tool search disabled for model 'us.anthropic.claude-3-5-haiku-20241022-v1:0': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-05-19T02:47:52.515Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:53.470Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:54.107Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:54.618Z [DEBUG] executePreToolHooks called for tool: Read
+2026-05-19T02:47:54.618Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-05-19T02:47:54.618Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:54.618Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T02:47:54.626Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-05-19T02:47:54.626Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:54.626Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T02:47:54.657Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:47:54.657Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:47:54.657Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:47:54.657Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:47:54.658Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:54.659Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:54.659Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:54.659Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:47:54.668Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:55.545Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-05-19T02:47:55.545Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:55.545Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T02:47:56.844Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:47:58.420Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:47:58.420Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:47:58.420Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:58.420Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:47:58.425Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/types/index.ts.tmp.536.1779158878425
+2026-05-19T02:47:58.425Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:47:58.429Z [DEBUG] Temp file written successfully, size: 821 bytes
+2026-05-19T02:47:58.430Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:58.430Z [DEBUG] Renaming /home/node/txai-projects/project/src/types/index.ts.tmp.536.1779158878425 to /home/node/txai-projects/project/src/types/index.ts
+2026-05-19T02:47:58.432Z [DEBUG] File /home/node/txai-projects/project/src/types/index.ts written atomically
+2026-05-19T02:47:58.436Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:47:58.436Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:58.436Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:47:58.466Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:47:58.466Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:47:58.466Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:47:58.466Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:47:58.467Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:58.468Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:58.469Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:47:58.469Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:47:58.478Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:00.619Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:01.902Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-05-19T02:48:01.903Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-05-19T02:48:01.903Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:01.903Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-05-19T02:48:01.903Z [DEBUG] Writing to temp file: /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json.tmp.536.1779158881903
+2026-05-19T02:48:01.904Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:48:01.908Z [DEBUG] Temp file written successfully, size: 728 bytes
+2026-05-19T02:48:01.909Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:48:01.909Z [DEBUG] Renaming /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json.tmp.536.1779158881903 to /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json
+2026-05-19T02:48:01.912Z [DEBUG] File /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json written atomically
+2026-05-19T02:48:01.912Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-05-19T02:48:01.912Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:01.912Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-05-19T02:48:01.943Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:01.943Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:01.943Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:01.943Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:01.944Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:01.945Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:01.946Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:01.946Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:01.955Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:04.394Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:04.879Z [DEBUG] executePreToolHooks called for tool: Read
+2026-05-19T02:48:04.879Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-05-19T02:48:04.879Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:04.879Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T02:48:04.884Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-05-19T02:48:04.884Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:04.884Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T02:48:04.913Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:04.913Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:04.913Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:04.913Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:04.914Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:04.915Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:04.916Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:04.916Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:04.925Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:07.211Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:10.046Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:48:10.046Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:48:10.046Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:10.046Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:10.050Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx.tmp.536.1779158890050
+2026-05-19T02:48:10.050Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:48:10.054Z [DEBUG] Temp file written successfully, size: 5398 bytes
+2026-05-19T02:48:10.055Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:48:10.055Z [DEBUG] Renaming /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx.tmp.536.1779158890050 to /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx
+2026-05-19T02:48:10.058Z [DEBUG] File /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx written atomically
+2026-05-19T02:48:10.060Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:48:10.060Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:10.060Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:10.094Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:10.094Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:10.094Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:10.094Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:10.095Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:10.096Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:10.096Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:10.096Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:10.109Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:12.308Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:14.732Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:48:14.732Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:48:14.732Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:14.732Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:14.736Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx.tmp.536.1779158894736
+2026-05-19T02:48:14.736Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:48:14.740Z [DEBUG] Temp file written successfully, size: 5461 bytes
+2026-05-19T02:48:14.742Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:48:14.742Z [DEBUG] Renaming /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx.tmp.536.1779158894736 to /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx
+2026-05-19T02:48:14.746Z [DEBUG] File /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx written atomically
+2026-05-19T02:48:14.748Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:48:14.748Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:14.748Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:14.780Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:14.780Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:14.780Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:14.780Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:14.788Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:14.789Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:14.790Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:14.790Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:14.799Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:17.316Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:28.703Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:48:28.703Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:48:28.703Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:28.703Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:28.708Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx.tmp.536.1779158908708
+2026-05-19T02:48:28.708Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:48:28.712Z [DEBUG] Temp file written successfully, size: 6220 bytes
+2026-05-19T02:48:28.714Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:48:28.714Z [DEBUG] Renaming /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx.tmp.536.1779158908708 to /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx
+2026-05-19T02:48:28.718Z [DEBUG] File /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx written atomically
+2026-05-19T02:48:28.720Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:48:28.720Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:28.720Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:28.751Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:28.751Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:28.751Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:28.751Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:28.758Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:28.760Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:28.760Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:28.760Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:28.769Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:31.192Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:40.757Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:48:40.758Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:48:40.758Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:40.758Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:40.763Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx.tmp.536.1779158920763
+2026-05-19T02:48:40.763Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:48:40.767Z [DEBUG] Temp file written successfully, size: 7083 bytes
+2026-05-19T02:48:40.768Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:48:40.768Z [DEBUG] Renaming /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx.tmp.536.1779158920763 to /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx
+2026-05-19T02:48:40.771Z [DEBUG] File /home/node/txai-projects/project/src/components/ConfigurationPanel.tsx written atomically
+2026-05-19T02:48:40.773Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:48:40.773Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:40.773Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:40.804Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:40.804Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:40.804Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:40.804Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:40.812Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:40.813Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:40.813Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:40.813Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:40.823Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:43.064Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:47.304Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-05-19T02:48:47.304Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-05-19T02:48:47.304Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:47.304Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-05-19T02:48:47.305Z [DEBUG] Writing to temp file: /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json.tmp.536.1779158927305
+2026-05-19T02:48:47.306Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:48:47.310Z [DEBUG] Temp file written successfully, size: 730 bytes
+2026-05-19T02:48:47.311Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:48:47.311Z [DEBUG] Renaming /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json.tmp.536.1779158927305 to /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json
+2026-05-19T02:48:47.313Z [DEBUG] File /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json written atomically
+2026-05-19T02:48:47.314Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-05-19T02:48:47.314Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:47.314Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-05-19T02:48:47.357Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:47.357Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:47.357Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:47.357Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:47.358Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:47.359Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:47.360Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:47.360Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:47.374Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:51.915Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:52.530Z [DEBUG] executePreToolHooks called for tool: Read
+2026-05-19T02:48:52.530Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-05-19T02:48:52.530Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:52.530Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T02:48:52.537Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-05-19T02:48:52.537Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:52.537Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-05-19T02:48:52.571Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:52.571Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:52.571Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:52.571Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:52.572Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:52.573Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:52.573Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:52.573Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:52.586Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:54.942Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:48:57.098Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:48:57.098Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:48:57.098Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:57.098Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:57.102Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/App.tsx.tmp.536.1779158937102
+2026-05-19T02:48:57.102Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:48:57.106Z [DEBUG] Temp file written successfully, size: 6060 bytes
+2026-05-19T02:48:57.107Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:48:57.107Z [DEBUG] Renaming /home/node/txai-projects/project/src/App.tsx.tmp.536.1779158937102 to /home/node/txai-projects/project/src/App.tsx
+2026-05-19T02:48:57.111Z [DEBUG] File /home/node/txai-projects/project/src/App.tsx written atomically
+2026-05-19T02:48:57.113Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:48:57.113Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:48:57.113Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:48:57.150Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:48:57.150Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:48:57.150Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:48:57.150Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:48:57.157Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:57.158Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:57.158Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:57.159Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:48:57.168Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:48:59.441Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:49:04.660Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:49:04.660Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:49:04.660Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:04.660Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:49:04.663Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/App.tsx.tmp.536.1779158944663
+2026-05-19T02:49:04.663Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:49:04.667Z [DEBUG] Temp file written successfully, size: 6628 bytes
+2026-05-19T02:49:04.668Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:49:04.668Z [DEBUG] Renaming /home/node/txai-projects/project/src/App.tsx.tmp.536.1779158944663 to /home/node/txai-projects/project/src/App.tsx
+2026-05-19T02:49:04.672Z [DEBUG] File /home/node/txai-projects/project/src/App.tsx written atomically
+2026-05-19T02:49:04.674Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:49:04.674Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:04.674Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:49:04.707Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:49:04.707Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:49:04.708Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:49:04.708Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:49:04.717Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:04.718Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:04.718Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:04.718Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:49:04.732Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:06.844Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:49:08.600Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:49:08.600Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:49:08.600Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:08.600Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:49:08.603Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/App.tsx.tmp.536.1779158948603
+2026-05-19T02:49:08.603Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:49:08.606Z [DEBUG] Temp file written successfully, size: 6654 bytes
+2026-05-19T02:49:08.607Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:49:08.607Z [DEBUG] Renaming /home/node/txai-projects/project/src/App.tsx.tmp.536.1779158948603 to /home/node/txai-projects/project/src/App.tsx
+2026-05-19T02:49:08.611Z [DEBUG] File /home/node/txai-projects/project/src/App.tsx written atomically
+2026-05-19T02:49:08.613Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:49:08.613Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:08.613Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:49:08.645Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:49:08.645Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:49:08.645Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:49:08.645Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:49:08.652Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:08.653Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:08.653Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:08.653Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:49:08.664Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:10.965Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:49:17.642Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-05-19T02:49:17.642Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-05-19T02:49:17.642Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:17.642Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:49:17.646Z [DEBUG] Writing to temp file: /home/node/txai-projects/project/src/App.tsx.tmp.536.1779158957646
+2026-05-19T02:49:17.646Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:49:17.650Z [DEBUG] Temp file written successfully, size: 6795 bytes
+2026-05-19T02:49:17.651Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:49:17.651Z [DEBUG] Renaming /home/node/txai-projects/project/src/App.tsx.tmp.536.1779158957646 to /home/node/txai-projects/project/src/App.tsx
+2026-05-19T02:49:17.655Z [DEBUG] File /home/node/txai-projects/project/src/App.tsx written atomically
+2026-05-19T02:49:17.657Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-05-19T02:49:17.657Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:17.657Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-05-19T02:49:17.691Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:49:17.691Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:49:17.691Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:49:17.691Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:49:17.697Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:17.699Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:17.699Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:17.700Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:49:17.709Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:20.361Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:49:22.686Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-05-19T02:49:22.686Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-05-19T02:49:22.686Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:22.686Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-05-19T02:49:22.686Z [DEBUG] Writing to temp file: /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json.tmp.536.1779158962686
+2026-05-19T02:49:22.687Z [DEBUG] Preserving file permissions: 100775
+2026-05-19T02:49:22.691Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-05-19T02:49:22.692Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:49:22.692Z [DEBUG] Renaming /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json.tmp.536.1779158962686 to /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json
+2026-05-19T02:49:22.695Z [DEBUG] File /home/node/.claude/todos/bc565592-7d28-455a-bd6b-35bd44a7efa8-agent-bc565592-7d28-455a-bd6b-35bd44a7efa8.json written atomically
+2026-05-19T02:49:22.695Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-05-19T02:49:22.695Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:22.695Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-05-19T02:49:22.727Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-05-19T02:49:22.727Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-05-19T02:49:22.727Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-05-19T02:49:22.727Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-05-19T02:49:22.728Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:22.729Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:22.729Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:22.730Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-05-19T02:49:22.742Z [DEBUG] CLAUDE_CODE_MAX_OUTPUT_TOKENS Invalid value "0" (using default: 32000)
+2026-05-19T02:49:25.657Z [DEBUG] Stream started - received first chunk
+2026-05-19T02:49:40.143Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-05-19T02:49:40.144Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:40.144Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-05-19T02:49:40.564Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2026-05-19T02:49:40.564Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:49:40.564Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)
+2026-05-19T02:49:40.573Z [DEBUG] Cleaned up session snapshot: /home/node/.claude/shell-snapshots/snapshot-zsh-1779158864132-he9pvr.sh
+2026-05-19T02:49:40.574Z [DEBUG] LSP server manager shut down successfully
+2026-05-19T02:49:40.593Z [DEBUG] MCP server "binary-file-processor": UNKNOWN connection closed after 115s (cleanly)
+2026-05-19T02:49:40.593Z [DEBUG] MCP server "binary-file-processor": Cleared connection cache for reconnection

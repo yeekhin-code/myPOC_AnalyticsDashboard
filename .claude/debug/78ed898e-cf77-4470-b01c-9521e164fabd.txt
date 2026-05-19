@@ -1,0 +1,95 @@
+2026-05-19T02:47:43.258Z [ERROR] Failed to save config with lock: Error: ENOENT: no such file or directory, lstat '/home/node/.claude.json'
+2026-05-19T02:47:43.261Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.536.1779158863261
+2026-05-19T02:47:43.261Z [DEBUG] Setting permissions for new file: 600
+2026-05-19T02:47:43.261Z [DEBUG] Temp file written successfully, size: 50 bytes
+2026-05-19T02:47:43.261Z [DEBUG] Renaming /home/node/.claude.json.tmp.536.1779158863261 to /home/node/.claude.json
+2026-05-19T02:47:43.262Z [DEBUG] File /home/node/.claude.json written atomically
+2026-05-19T02:47:43.294Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.536.1779158863294
+2026-05-19T02:47:43.294Z [DEBUG] Preserving file permissions: 100600
+2026-05-19T02:47:43.294Z [DEBUG] Temp file written successfully, size: 87 bytes
+2026-05-19T02:47:43.294Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:43.294Z [DEBUG] Renaming /home/node/.claude.json.tmp.536.1779158863294 to /home/node/.claude.json
+2026-05-19T02:47:43.295Z [DEBUG] File /home/node/.claude.json written atomically
+2026-05-19T02:47:43.299Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.536.1779158863299
+2026-05-19T02:47:43.299Z [DEBUG] Preserving file permissions: 100600
+2026-05-19T02:47:43.300Z [DEBUG] Temp file written successfully, size: 122 bytes
+2026-05-19T02:47:43.300Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:43.300Z [DEBUG] Renaming /home/node/.claude.json.tmp.536.1779158863299 to /home/node/.claude.json
+2026-05-19T02:47:43.300Z [DEBUG] File /home/node/.claude.json written atomically
+2026-05-19T02:47:43.304Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.536.1779158863304
+2026-05-19T02:47:43.304Z [DEBUG] Preserving file permissions: 100600
+2026-05-19T02:47:43.304Z [DEBUG] Temp file written successfully, size: 159 bytes
+2026-05-19T02:47:43.304Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:43.304Z [DEBUG] Renaming /home/node/.claude.json.tmp.536.1779158863304 to /home/node/.claude.json
+2026-05-19T02:47:43.304Z [DEBUG] File /home/node/.claude.json written atomically
+2026-05-19T02:47:43.308Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-05-19T02:47:43.308Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-05-19T02:47:43.308Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-05-19T02:47:43.319Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-05-19T02:47:43.320Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-05-19T02:47:43.320Z [DEBUG] Total LSP servers loaded: 0
+2026-05-19T02:47:43.320Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-05-19T02:47:43.320Z [DEBUG] LSP manager initialized with 0 servers
+2026-05-19T02:47:43.320Z [DEBUG] LSP server manager initialized successfully
+2026-05-19T02:47:43.321Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-05-19T02:47:43.321Z [DEBUG] [STARTUP] MCP configs loaded in 2ms
+2026-05-19T02:47:43.330Z [DEBUG] [STARTUP] Running setup()...
+2026-05-19T02:47:43.340Z [DEBUG] Stats cache does not exist, returning empty cache
+2026-05-19T02:47:43.340Z [DEBUG] Stats cache empty, processing all historical data in background
+2026-05-19T02:47:43.386Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/node/.claude/skills, project=[/home/node/txai-projects/project/.claude/skills]
+2026-05-19T02:47:43.474Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-05-19T02:47:43.529Z [DEBUG] Writing to temp file: /home/node/.claude/todos/78ed898e-cf77-4470-b01c-9521e164fabd-agent-78ed898e-cf77-4470-b01c-9521e164fabd.json.tmp.536.1779158863529
+2026-05-19T02:47:43.533Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-05-19T02:47:43.533Z [DEBUG] Renaming /home/node/.claude/todos/78ed898e-cf77-4470-b01c-9521e164fabd-agent-78ed898e-cf77-4470-b01c-9521e164fabd.json.tmp.536.1779158863529 to /home/node/.claude/todos/78ed898e-cf77-4470-b01c-9521e164fabd-agent-78ed898e-cf77-4470-b01c-9521e164fabd.json
+2026-05-19T02:47:43.535Z [DEBUG] File /home/node/.claude/todos/78ed898e-cf77-4470-b01c-9521e164fabd-agent-78ed898e-cf77-4470-b01c-9521e164fabd.json written atomically
+2026-05-19T02:47:43.539Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-05-19T02:47:43.539Z [DEBUG] Total plugin skills loaded: 0
+2026-05-19T02:47:43.539Z [DEBUG] Total plugin commands loaded: 0
+2026-05-19T02:47:43.539Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-05-19T02:47:43.568Z [DEBUG] [STARTUP] setup() completed in 238ms
+2026-05-19T02:47:43.568Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-05-19T02:47:43.575Z [DEBUG] Total plugin agents loaded: 0
+2026-05-19T02:47:43.576Z [DEBUG] Skipping duplicate skill 'authenticating-foundry-apps' from projectSettings (same inode already loaded from userSettings)
+2026-05-19T02:47:43.576Z [DEBUG] Skipping duplicate skill 'configuring-vite-environments' from projectSettings (same inode already loaded from userSettings)
+2026-05-19T02:47:43.576Z [DEBUG] Skipping duplicate skill 'database-integration' from projectSettings (same inode already loaded from userSettings)
+2026-05-19T02:47:43.576Z [DEBUG] Skipping duplicate skill 'documenting-projects' from projectSettings (same inode already loaded from userSettings)
+2026-05-19T02:47:43.576Z [DEBUG] Skipping duplicate skill 'integrating-foundry-services' from projectSettings (same inode already loaded from userSettings)
+2026-05-19T02:47:43.576Z [DEBUG] Skipping duplicate skill 'managing-services' from projectSettings (same inode already loaded from userSettings)
+2026-05-19T02:47:43.576Z [DEBUG] Deduplicated 6 skills (same inode)
+2026-05-19T02:47:43.576Z [DEBUG] Loaded 6 unique skills (managed: 0, user: 6, project: 6, legacy commands: 0)
+2026-05-19T02:47:43.577Z [DEBUG] getSkills returning: 6 skill dir commands, 0 plugin skills
+2026-05-19T02:47:43.578Z [DEBUG] [STARTUP] Commands and agents loaded in 10ms
+2026-05-19T02:47:43.597Z [DEBUG] MCP server "binary-file-processor": Starting connection with timeout of 30000ms
+2026-05-19T02:47:43.620Z [DEBUG] MCP server "voltmxMcpServer": Starting connection with timeout of 30000ms
+2026-05-19T02:47:43.638Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.536.1779158863638
+2026-05-19T02:47:43.638Z [DEBUG] Preserving file permissions: 100600
+2026-05-19T02:47:43.639Z [DEBUG] Temp file written successfully, size: 227 bytes
+2026-05-19T02:47:43.639Z [DEBUG] Applied original permissions to temp file
+2026-05-19T02:47:43.639Z [DEBUG] Renaming /home/node/.claude.json.tmp.536.1779158863638 to /home/node/.claude.json
+2026-05-19T02:47:43.639Z [DEBUG] File /home/node/.claude.json written atomically
+2026-05-19T02:47:43.939Z [DEBUG] Git remote URL: null
+2026-05-19T02:47:43.939Z [DEBUG] No git remote URL found
+2026-05-19T02:47:43.939Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-05-19T02:47:44.132Z [DEBUG] Creating shell snapshot for zsh (/usr/bin/zsh)
+2026-05-19T02:47:44.132Z [DEBUG] Looking for shell config file: /home/node/.zshrc
+2026-05-19T02:47:44.132Z [DEBUG] Shell config file not found: /home/node/.zshrc, creating snapshot with Claude Code defaults only
+2026-05-19T02:47:44.132Z [DEBUG] Snapshots directory: /home/node/.claude/shell-snapshots
+2026-05-19T02:47:44.135Z [DEBUG] Creating snapshot at: /home/node/.claude/shell-snapshots/snapshot-zsh-1779158864132-he9pvr.sh
+2026-05-19T02:47:44.135Z [DEBUG] Shell binary exists: true
+2026-05-19T02:47:44.135Z [DEBUG] Execution timeout: 10000ms
+2026-05-19T02:47:44.148Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/usr/src/app/node_modules/@anthropic-ai/claude-agent-sdk/vendor/ripgrep/x64-linux/rg)
+2026-05-19T02:47:44.159Z [DEBUG] Watching for changes in skill directories: /home/node/.claude/skills, /home/node/txai-projects/project/.claude/skills...
+2026-05-19T02:47:44.164Z [ERROR] MCP server "voltmxMcpServer" Server stderr: Configuration loaded successfully
+VoltMX MCP Server running on stdio
+2026-05-19T02:47:44.216Z [DEBUG] MCP server "voltmxMcpServer": Successfully connected to undefined server in 600ms
+2026-05-19T02:47:44.216Z [DEBUG] MCP server "voltmxMcpServer": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":true,"serverVersion":{"name":"voltmx-mcp-server","version":"1.0.0"}}
+2026-05-19T02:47:44.247Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-05-19T02:47:44.247Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:44.247Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-05-19T02:47:44.247Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-05-19T02:47:44.247Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:44.247Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-05-19T02:47:44.247Z [DEBUG] Getting matching hook commands for SubagentStart with query: Bash
+2026-05-19T02:47:44.247Z [DEBUG] Found 0 hook matchers in settings
+2026-05-19T02:47:44.247Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-05-19T02:47:44.333Z [DEBUG] Shell snapshot created successfully (537 bytes)

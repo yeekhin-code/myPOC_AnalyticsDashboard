@@ -10,6 +10,7 @@ export interface DataEndpoint {
   name: string;
   url: string;
   enabled: boolean;
+  department: string; // department id or 'all'
 }
 
 export interface FilterConfig {

@@ -21,6 +21,7 @@ const INITIAL_ENDPOINTS: DataEndpoint[] = [
     name: 'Sales Performance',
     url: 'https://jsonplaceholder.typicode.com/users',
     enabled: true,
+    department: 'all',
   },
 ];
 
@@ -49,6 +50,21 @@ function App() {
       setChartData([]);
     }
   }, [endpoints, filters]);
+
+  // Filter chart data based on selected department
+  const filteredChartData = chartData.filter((chart) => {
+    const endpoint = endpoints.find((ep) => ep.id === chart.endpointId);
+    if (!endpoint) return false;
+
+    // If filter is "all", show charts from all departments
+    if (filters.department === 'all') return true;
+
+    // If endpoint department is "all", show it in all department filters
+    if (endpoint.department === 'all') return true;
+
+    // Otherwise, only show if department matches
+    return endpoint.department === filters.department;
+  });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -84,7 +100,7 @@ function App() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Configuration Panel */}
-        <ConfigurationPanel endpoints={endpoints} onEndpointsChange={setEndpoints} />
+        <ConfigurationPanel endpoints={endpoints} departments={DEPARTMENTS} onEndpointsChange={setEndpoints} />
 
         {/* Filter Panel */}
         <FilterPanel filters={filters} departments={DEPARTMENTS} onFilterChange={setFilters} />
@@ -120,7 +136,7 @@ function App() {
             )}
           </div>
 
-          {chartData.length === 0 && !loading ? (
+          {filteredChartData.length === 0 && !loading ? (
             <div className="bg-white rounded-lg shadow-md p-12 text-center">
               <svg
                 className="mx-auto h-12 w-12 text-gray-400 mb-4"
@@ -137,12 +153,14 @@ function App() {
               </svg>
               <h3 className="text-lg font-medium text-gray-900 mb-2">No Data Available</h3>
               <p className="text-gray-500">
-                Configure data endpoints above to start visualizing your analytics.
+                {chartData.length === 0
+                  ? 'Configure data endpoints above to start visualizing your analytics.'
+                  : 'No charts match the selected department filter.'}
               </p>
             </div>
           ) : (
-            <div className={`grid gap-6 ${chartData.length === 1 ? 'grid-cols-1' : 'grid-cols-1 xl:grid-cols-2'}`}>
-              {chartData.map((data) => (
+            <div className={`grid gap-6 ${filteredChartData.length === 1 ? 'grid-cols-1' : 'grid-cols-1 xl:grid-cols-2'}`}>
+              {filteredChartData.map((data) => (
                 <ChartRenderer key={data.endpointId} chartData={data} />
               ))}
             </div>
