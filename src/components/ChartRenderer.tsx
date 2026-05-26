@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   BarChart,
   Bar,
@@ -20,7 +19,7 @@ import {
   Cell,
   LabelList,
 } from 'recharts';
-import { ChartData, DataPoint } from '../types';
+import { ChartData } from '../types';
 
 interface ChartRendererProps {
   chartData: ChartData;
@@ -129,7 +128,7 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
                 outerRadius={120}
                 label
               >
-                {data.map((entry, index) => (
+                {data.map((_entry, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
@@ -165,7 +164,7 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
 
         // Custom label content renderer
         const customLabel = (props: any) => {
-          const { x, y, value, index } = props;
+          const { x, y, index } = props;
           const labelValue = data[index]?.[bubbleLabelKey];
 
           if (!labelValue) return null;

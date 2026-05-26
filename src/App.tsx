@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import FilterPanel from './components/FilterPanel';
 import ConfigurationPanel from './components/ConfigurationPanel';
 import ChartRenderer from './components/ChartRenderer';

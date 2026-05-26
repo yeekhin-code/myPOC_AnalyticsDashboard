@@ -161,6 +161,33 @@ This project uses Vite's environment variable system:
 
 - `VITE_BASE_PATH` - Base path for deployment (default: `/`)
 
+## Deployment
+
+### GitHub Pages
+
+This application is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+**Quick Start:**
+1. Create a new GitHub repository
+2. Push your code: `git push origin main`
+3. Enable GitHub Pages in repository settings (Actions source)
+4. Your site will be live at: `https://username.github.io/repo-name/`
+
+**Detailed Instructions:**
+See [GitHub Deployment Guide](docs/GITHUB_DEPLOYMENT.md) for complete step-by-step instructions.
+
+**Deployment Features:**
+- ✅ Automatic deployment on push to main branch
+- ✅ GitHub Actions workflow included
+- ✅ Environment-based base path configuration
+- ✅ Build optimization and sourcemaps
+- ✅ Custom domain support (optional)
+
+## Additional Documentation
+
+- [GitHub Deployment Guide](docs/GITHUB_DEPLOYMENT.md) - Complete guide for hosting on GitHub Pages
+- [Architecture Guide](docs/ARCHITECTURE.md) - System architecture (if available)
+
 ## License
 
 MIT License - Built by Leona, HCL Software's Vibe Coding Agent
