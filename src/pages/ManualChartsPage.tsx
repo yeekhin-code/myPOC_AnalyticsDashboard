@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import FilterPanel from '../components/FilterPanel';
 import ManualChartConfig from '../components/ManualChartConfig';
 import ManualChartDisplay from '../components/ManualChartDisplay';
