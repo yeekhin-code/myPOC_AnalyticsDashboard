@@ -29,7 +29,7 @@ export interface ChartData {
   chartType: ChartType;
 }
 
-export type ChartType = 'bar' | 'line' | 'pie' | 'area' | 'bubble' | 'table';
+export type ChartType = 'bar' | 'line' | 'pie' | 'area' | 'bubble' | 'table' | 'combo' | 'donut';
 
 export interface ChartConfig {
   type: ChartType;
@@ -37,4 +37,13 @@ export interface ChartConfig {
   yAxisKey?: string;
   dataKey?: string;
   nameKey?: string;
+}
+
+export interface ManualChart {
+  id: string;
+  name: string;
+  chartType: ChartType;
+  jsonData: string;
+  enabled: boolean;
+  createdAt: string;
 }

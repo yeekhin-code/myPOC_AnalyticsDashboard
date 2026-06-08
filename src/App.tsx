@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import FilterPanel from './components/FilterPanel';
 import ConfigurationPanel from './components/ConfigurationPanel';
+import ManualChartConfig from './components/ManualChartConfig';
 import ChartRenderer from './components/ChartRenderer';
+import ManualChartDisplay from './components/ManualChartDisplay';
 import { fetchAllEndpointsData } from './utils/dataFetcher';
-import { FilterConfig, Department, DataEndpoint, ChartData } from './types';
+import { flattenJSON } from './utils/jsonFlattener';
+import { FilterConfig, Department, DataEndpoint, ChartData, ManualChart } from './types';
 
 // Sample departments
 const DEPARTMENTS: Department[] = [
@@ -34,6 +37,7 @@ function App() {
   const [endpoints, setEndpoints] = useState<DataEndpoint[]>(INITIAL_ENDPOINTS);
   const [chartData, setChartData] = useState<ChartData[]>([]);
   const [loading, setLoading] = useState(false);
+  const [manualCharts, setManualCharts] = useState<ManualChart[]>([]);
 
   // Fetch data when endpoints or filters change
   useEffect(() => {
@@ -65,6 +69,31 @@ function App() {
     // Otherwise, only show if department matches
     return endpoint.department === filters.department;
   });
+
+  // Process manual charts data
+  const manualChartData: ChartData[] = manualCharts
+    .filter((chart) => chart.enabled)
+    .map((chart) => {
+      try {
+        const rawData = JSON.parse(chart.jsonData);
+        const flatData = flattenJSON(Array.isArray(rawData) ? rawData : [rawData]);
+
+        return {
+          endpointId: chart.id,
+          endpointName: chart.name,
+          data: flatData.slice(0, 20), // Limit to 20 records
+          chartType: chart.chartType,
+        };
+      } catch (error) {
+        console.error(`Error parsing JSON for chart ${chart.name}:`, error);
+        return {
+          endpointId: chart.id,
+          endpointName: chart.name,
+          data: [],
+          chartType: chart.chartType,
+        };
+      }
+    });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -101,6 +130,9 @@ function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Configuration Panel */}
         <ConfigurationPanel endpoints={endpoints} departments={DEPARTMENTS} onEndpointsChange={setEndpoints} />
+
+        {/* Manual Chart Configuration */}
+        <ManualChartConfig charts={manualCharts} onChartsChange={setManualCharts} />
 
         {/* Filter Panel */}
         <FilterPanel filters={filters} departments={DEPARTMENTS} onFilterChange={setFilters} />
@@ -166,6 +198,26 @@ function App() {
             </div>
           )}
         </div>
+
+        {/* Manual Charts Section */}
+        {manualChartData.length > 0 && (
+          <div className="mb-6">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center space-x-3">
+                <h2 className="text-xl font-bold text-gray-800">Manual Charts</h2>
+                <span className="px-2 py-1 text-xs bg-purple-100 text-purple-700 rounded-full font-medium">
+                  {manualChartData.length} chart{manualChartData.length !== 1 ? 's' : ''}
+                </span>
+              </div>
+            </div>
+
+            <div className={`grid gap-6 ${manualChartData.length === 1 ? 'grid-cols-1' : 'grid-cols-1 xl:grid-cols-2'}`}>
+              {manualChartData.map((data) => (
+                <ManualChartDisplay key={data.endpointId} chartData={data} showDataTable={true} />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Footer Attribution */}
         <div className="flex justify-center mt-8">

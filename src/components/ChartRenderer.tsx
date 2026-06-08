@@ -228,6 +228,54 @@ const ChartRenderer: React.FC<ChartRendererProps> = ({ chartData }) => {
           </ResponsiveContainer>
         );
 
+      case 'donut':
+        return (
+          <ResponsiveContainer width="100%" height={350}>
+            <PieChart>
+              <Pie
+                data={data}
+                dataKey={yKey}
+                nameKey={xKey}
+                cx="50%"
+                cy="50%"
+                innerRadius={70}
+                outerRadius={120}
+                label
+              >
+                {data.map((_entry, index) => (
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                ))}
+              </Pie>
+              <Tooltip
+                contentStyle={{ backgroundColor: '#fff', border: '1px solid #e5e7eb', borderRadius: '6px' }}
+              />
+              <Legend />
+            </PieChart>
+          </ResponsiveContainer>
+        );
+
+      case 'combo':
+        return (
+          <ResponsiveContainer width="100%" height={350}>
+            <BarChart data={data}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+              <XAxis dataKey={xKey} stroke="#6b7280" />
+              <YAxis stroke="#6b7280" />
+              <Tooltip
+                contentStyle={{ backgroundColor: '#fff', border: '1px solid #e5e7eb', borderRadius: '6px' }}
+              />
+              <Legend />
+              {numericKeys.map((key, index) => {
+                // Use line for the last numeric field, bars for others
+                if (index === numericKeys.length - 1) {
+                  return <Line key={key} type="monotone" dataKey={key} stroke={COLORS[index % COLORS.length]} strokeWidth={2} />;
+                }
+                return <Bar key={key} dataKey={key} fill={COLORS[index % COLORS.length]} />;
+              })}
+            </BarChart>
+          </ResponsiveContainer>
+        );
+
       case 'table':
         return (
           <div className="overflow-x-auto">
